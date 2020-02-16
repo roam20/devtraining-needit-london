@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element label="Requested For" mandatory="true" max_length="32" name="requested_for" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request Type" mandatory="true" max_length="40" name="requesttype" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Choice 1" sequence="0" value="Choice 1"/>
+                <element inactive_on_update="false" label="HR" sequence="0" value="hr"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 2" sequence="1" value="Choice 2"/>
+                <element inactive_on_update="false" label="Legal" sequence="1" value="legal"/>
+                <element inactive="true" inactive_on_update="true" label="Choice 3" sequence="2" value="Choice 3"/>
+                <element inactive_on_update="false" label="Facilities" sequence="2" value="facilities"/>
+                <element inactive_on_update="false" label="Your Dept" sequence="3" value="your dept"/>
+            </choice>
+        </element>
+        <element label="When Needed" max_length="40" name="u_glide_date_time_1" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="legal1" label="What Needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+            <choice>
+                <element inactive_on_update="false" label="HR1" sequence="0" value="hr1"/>
+                <element inactive_on_update="false" label="HR2" sequence="1" value="hr2"/>
+                <element inactive_on_update="false" label="Legal1" sequence="2" value="legal1"/>
+                <element inactive_on_update="false" label="Legal2" sequence="3" value="legal2"/>
+                <element inactive_on_update="false" label="Facilities1" sequence="4" value="facilities1"/>
+                <element inactive_on_update="false" label="Facilities2" sequence="5" value="facilities2"/>
+                <element inactive_on_update="false" label="Your Dept1" sequence="6" value="your dept1"/>
+                <element inactive_on_update="false" label="Your Dept2" sequence="7" value="your dept2"/>
+            </choice>
+        </element>
+    </element>
+</database>
